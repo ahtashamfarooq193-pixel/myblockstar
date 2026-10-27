@@ -1,0 +1,1660 @@
+body {
+  margin:0;
+  overflow-x:hidden
+}
+
+
+.wp-site-blocks {
+  padding:0
+}
+
+
+:where([class*="bs-"]) {
+  margin:0
+}
+
+
+.wp-block-button__link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:none;
+  color:inherit;
+  font:inherit;
+  padding:0;
+  border:0;
+  border-radius:0;
+  text-decoration:none;
+  box-shadow:none;
+  word-break:normal
+}
+
+
+body .wp-site-blocks .wp-block-buttons,body .wp-site-blocks .wp-block-button,body .wp-site-blocks figure.wp-block-image {
+  display:contents
+}
+
+
+.wp-block-image img {
+  max-width:100%
+}
+
+
+body .wp-block-buttons .wp-block-button__link {
+  width:auto
+}
+
+
+a:hover {
+  color:#F3DDA8
+}
+
+
+.bs-hdr {
+  border-bottom:1px solid #2E568F
+}
+
+
+.bs-hdr-in {
+  max-width:1240px;
+  margin:0 auto;
+  padding:22px 32px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+
+
+.bs-hdr-logo img {
+  height:40px;
+  width:auto;
+  display:block
+}
+
+
+.bs-hdr-nav {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:28px;
+  font-size:15px;
+  font-weight:500
+}
+
+
+.bs-nav .wp-block-navigation-item__content {
+  color:#C3C8D2
+}
+
+
+.bs-nav .wp-block-navigation-item__content:hover {
+  color:#F3DDA8
+}
+
+
+.bs-nav.wp-block-navigation {
+  gap:28px;
+  font-size:15px;
+  font-weight:500
+}
+
+
+.bs-hdr-buy>.wp-block-button__link {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:0 22px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#C9A55C,#8B5CF6);
+  color:#0B1D3A;
+  font-weight:700
+}
+
+
+.bs-hdr-buy>.wp-block-button__link:hover {
+  color:#0B1D3A;
+  filter:brightness(1.08)
+}
+
+
+.bs-lang {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-height:44px;
+  padding:0 6px 0 14px;
+  border:1px solid #3B629E;
+  border-radius:999px;
+  background:#21457E
+}
+
+
+.bs-lang label {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0)
+}
+
+
+.bs-lang select {
+  min-height:40px;
+  padding:0 8px;
+  background:#21457E;
+  border:0;
+  color:#EDEFF3;
+  font:inherit;
+  font-size:14px;
+  cursor:pointer
+}
+
+
+.bs-flogo img {
+  height:32px;
+  width:auto;
+  display:block
+}
+
+
+.bs-form {
+  display:contents
+}
+
+
+.bs-form .bs-hp {
+  position:absolute!important;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
+
+
+.bs-form-ok {
+  padding:14px 18px;
+  border-radius:12px;
+  background:rgba(94,234,212,.12);
+  border:1px solid #5EEAD4;
+  color:#CCFBF1;
+  font-size:15px
+}
+
+
+.bs-form-err {
+  padding:14px 18px;
+  border-radius:12px;
+  background:rgba(251,113,133,.12);
+  border:1px solid #FB7185;
+  color:#FFE4E6;
+  font-size:15px
+}
+
+
+.bs-askjet .bs-typing {
+  opacity:.7
+}
+
+
+.goog-te-banner-frame,.skiptranslate>iframe,#goog-gt-tt {
+  display:none!important
+}
+
+
+body {
+  top:0!important
+}
+
+
+#bs-gt {
+  display:none
+}
+
+
+.bs-stretch {
+  color:inherit
+}
+
+
+.bs-stretch::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit
+}
+
+
+.bs-6bbf43f {
+  position: relative;
+   border-bottom: 1px solid #2E568F;
+   background: radial-gradient(900px 520px at 88% 8%, rgba(124,58,237,0.30), transparent 62%), radial-gradient(760px 520px at 0% 100%, rgba(20,184,166,0.20), transparent 60%), radial-gradient(620px 420px at 58% 96%, rgba(251,146,60,0.14), transparent 60%)
+}
+
+
+.bs-e6b7791 {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 120px 32px 96px;
+   display: flex;
+   flex-direction: column;
+   gap: 36px
+}
+
+
+.bs-621ac33 {
+  display: inline-block;
+   width: 40px;
+   height: 1px;
+   background: #C9A55C
+}
+
+
+.bs-96f48cb {
+  display: flex;
+   align-items: center;
+   gap: 14px;
+   font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: #C9A55C
+}
+
+
+.bs-75c1c05 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: clamp(52px, 8vw, 116px);
+   line-height: 0.98;
+   letter-spacing: -0.015em;
+   max-width: 1080px
+}
+
+
+.bs-62bede0 {
+  font-style: italic;
+   background: linear-gradient(90deg, #F3DDA8 0%, #C4B5FD 55%, #5EEAD4 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent
+}
+
+
+.bs-d994c4d {
+  margin: 0;
+   max-width: 640px;
+   font-size: 20px;
+   color: #B9BFCB
+}
+
+
+.bs-f45d815 {
+  display: flex;
+   flex-wrap: wrap;
+   gap: 16px
+}
+
+
+.bs-fb84486 > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   background: #C9A55C;
+   color: #0B1D3A;
+   font-weight: 700;
+   font-size: 16px
+}
+
+
+.bs-9813cbb > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   border: 1px solid #4C75B2;
+   color: #EDEFF3;
+   font-weight: 600;
+   font-size: 16px
+}
+
+
+.bs-c99a3ff > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   border: 1px solid #44337A;
+   color: #C4B5FD;
+   font-weight: 600;
+   font-size: 16px
+}
+
+
+.bs-84aa42d {
+  margin-top: 48px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+   border-top: 1px solid #3A64A3
+}
+
+
+.bs-04ddf33 {
+  padding: 28px 24px 0 0;
+   display: flex;
+   flex-direction: column;
+   gap: 6px
+}
+
+
+.bs-1252053 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 60px;
+   line-height: 1;
+   color: #F3DDA8
+}
+
+
+.bs-d553aff {
+  font-size: 14px;
+   color: #BCC3D2;
+   letter-spacing: 0.04em
+}
+
+
+.bs-74e25ff {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 60px;
+   line-height: 1;
+   color: #C4B5FD
+}
+
+
+.bs-654f5dd {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 60px;
+   line-height: 1;
+   color: #5EEAD4
+}
+
+
+.bs-4b6c67b {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 60px;
+   line-height: 1;
+   color: #FDBA74
+}
+
+
+.bs-1185954 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 60px;
+   line-height: 1;
+   color: #FDA4AF
+}
+
+
+.bs-87bc45f {
+  border-bottom: 1px solid #2E568F;
+   background: #1D3F74
+}
+
+
+.bs-1fc8fc5 {
+  max-width: 1320px;
+   margin: 0 auto;
+   padding: 112px 32px 96px;
+   display: flex;
+   flex-direction: column;
+   gap: 48px
+}
+
+
+.bs-08d5e67 {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-end;
+   gap: 24px
+}
+
+
+.bs-5187f02 {
+  display: flex;
+   flex-direction: column;
+   gap: 16px;
+   max-width: 720px
+}
+
+
+.bs-d6c3309 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: #A78BFA
+}
+
+
+.bs-84de4c9 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: clamp(40px, 5vw, 64px);
+   line-height: 1.04
+}
+
+
+.bs-ac6d016 {
+  font-style: italic;
+   color: #C4B5FD
+}
+
+
+.bs-bd74c09 {
+  margin: 0;
+   max-width: 440px;
+   color: #B9BFCB
+}
+
+
+.bs-67b5f98 {
+  width: 100%;
+   overflow-x: auto
+}
+
+
+.bs-2a4072a.wp-block-image img {
+  width: 100%;
+   min-width: 760px;
+   height: auto;
+   display: block;
+   display: block;
+   max-width: none
+}
+
+
+.bs-c68a13f {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   gap: 20px
+}
+
+
+.bs-e273cbe {
+  font-weight: 600;
+   color: #E9D5FF
+}
+
+
+.bs-7f6905e {
+  font-size: 15px;
+   color: #B9BFCB
+}
+
+
+.bs-02e1edb {
+  padding: 24px 28px;
+   border: 1px solid #2E2A4A;
+   border-radius: 16px;
+   background: #141226;
+   display: flex;
+   flex-direction: column;
+   gap: 6px
+}
+
+
+.bs-df53d24 {
+  border-bottom: 1px solid #2E568F
+}
+
+
+.bs-b74d80f {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 112px 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 56px
+}
+
+
+.bs-cd14059 {
+  display: flex;
+   flex-direction: column;
+   gap: 16px;
+   max-width: 640px
+}
+
+
+.bs-bafd7f0 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: #C9A55C
+}
+
+
+.bs-68ba019 {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 24px
+}
+
+
+.bs-d6ddee3 {
+  padding: 40px 36px;
+   background: linear-gradient(160deg, #2A2213 0%, #21457E 70%);
+   border: 1px solid #4A3C22;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 18px
+}
+
+
+.bs-b554dad.wp-block-image img {
+  width: 40px;
+   height: 40px;
+   display: block;
+   max-width: none
+}
+
+
+.bs-98047a8 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   color: #AEB7C9
+}
+
+
+.bs-53ae860 {
+  margin: 0;
+   font-size: 24px;
+   font-weight: 600
+}
+
+
+.bs-1f70e34 {
+  margin: 0;
+   color: #B9BFCB
+}
+
+
+.bs-18f2a80 {
+  padding: 40px 36px;
+   background: linear-gradient(160deg, #24183F 0%, #21457E 70%);
+   border: 1px solid #44337A;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 18px
+}
+
+
+.bs-f908efc {
+  padding: 40px 36px;
+   background: linear-gradient(160deg, #0F2D30 0%, #21457E 70%);
+   border: 1px solid #1F5452;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 18px
+}
+
+
+.bs-6329c9d {
+  display: flex;
+   flex-direction: column;
+   gap: 16px;
+   max-width: 760px
+}
+
+
+.bs-38b6d94 {
+  margin: 0;
+   color: #B9BFCB;
+   max-width: 620px
+}
+
+
+.bs-f29dbe2 {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 24px
+}
+
+
+.bs-2723de9 {
+  position: relative;
+   min-height: 420px;
+   padding: 36px;
+   border-radius: 22px;
+   border: 1px solid #3A64A3;
+   background: linear-gradient(160deg, #4A3212 0%, #22180C 55%, #1D3F74 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden
+}
+
+
+.bs-7e41407 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   color: #FCD34D
+}
+
+
+.bs-5736211.wp-block-image img {
+  width: 100%;
+   height: 150px;
+   display: block;
+   max-width: none
+}
+
+
+.bs-4b62b75 {
+  display: flex;
+   flex-direction: column;
+   gap: 6px
+}
+
+
+.bs-aa09e59 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: 52px;
+   line-height: 1
+}
+
+
+.bs-0332600 {
+  color: #B9BFCB;
+   font-size: 15px
+}
+
+
+.bs-8e9a4b1 {
+  position: relative;
+   min-height: 420px;
+   padding: 36px;
+   border-radius: 22px;
+   border: 1px solid #3A64A3;
+   background: linear-gradient(160deg, #0E4148 0%, #0D2229 55%, #1D3F74 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden
+}
+
+
+.bs-ee0c412 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   color: #5EEAD4
+}
+
+
+.bs-923ea26 {
+  position: relative;
+   min-height: 420px;
+   padding: 36px;
+   border-radius: 22px;
+   border: 1px solid #3A64A3;
+   background: linear-gradient(160deg, #4A1A2E 0%, #26121D 55%, #1D3F74 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden
+}
+
+
+.bs-7feb0fd {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   color: #FDA4AF
+}
+
+
+.bs-47788f9 {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 112px 32px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 64px;
+   align-items: flex-start
+}
+
+
+.bs-485234d {
+  flex: 1 1 420px;
+   display: flex;
+   flex-direction: column;
+   gap: 22px
+}
+
+
+.bs-6f0bc69 {
+  font-style: italic;
+   color: #E2C27F
+}
+
+
+.bs-5b2690d {
+  margin: 0;
+   color: #B9BFCB;
+   max-width: 500px
+}
+
+
+.bs-bfd7941 {
+  display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #C9A55C
+}
+
+
+.bs-ef3c548 {
+  display: inline-flex;
+   align-self: flex-start;
+   align-items: center;
+   gap: 12px;
+   padding: 12px 20px;
+   border: 1px solid #3A64A3;
+   border-radius: 999px;
+   font-size: 15px;
+   color: #C3C8D2
+}
+
+
+.bs-65dc43f {
+  flex: 1 1 480px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px
+}
+
+
+.bs-f801b2b {
+  display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 20px
+}
+
+
+.bs-68f4b5a {
+  padding: 28px;
+   background: #21457E;
+   border: 1px solid #335D99;
+   border-radius: 18px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px
+}
+
+
+.bs-821e0ce {
+  font-size: 13px;
+   color: #BCC3D2;
+   letter-spacing: 0.06em;
+   text-transform: uppercase
+}
+
+
+.bs-161c550 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 40px;
+   line-height: 1.05
+}
+
+
+.bs-b9c7bc8 {
+  padding: 28px;
+   background: #21457E;
+   border: 1px solid #335D99;
+   border-radius: 18px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px
+}
+
+
+.bs-63b68e8 {
+  display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 8px;
+   font-size: 13px;
+   color: #BCC3D2;
+   letter-spacing: 0.06em;
+   text-transform: uppercase
+}
+
+
+.bs-c9db056 {
+  display: flex;
+   height: 14px;
+   border-radius: 999px;
+   overflow: hidden;
+   background: #3A64A3
+}
+
+
+.bs-e849f45 {
+  width: 70%;
+   background: #C9A55C
+}
+
+
+.bs-8f6dbc5 {
+  width: 30%;
+   background: #8B5CF6
+}
+
+
+.bs-e2ecaba {
+  display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 12px
+}
+
+
+.bs-b850333 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 36px;
+   color: #F3DDA8;
+   line-height: 1.1
+}
+
+
+.bs-c27ebd0 {
+  font-size: 14px;
+   color: #B9BFCB
+}
+
+
+.bs-a431167 {
+  display: flex;
+   flex-direction: column
+}
+
+
+.bs-271e4ea {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 36px;
+   color: #C4B5FD;
+   line-height: 1.1
+}
+
+
+.bs-10fd76b {
+  display: flex;
+   flex-direction: column;
+   text-align: right
+}
+
+
+.bs-30c1c34 {
+  border-bottom: 1px solid #2E568F;
+   background: radial-gradient(800px 480px at 100% 0%, rgba(124,58,237,0.22), transparent 60%), radial-gradient(700px 460px at 0% 100%, rgba(201,165,92,0.16), transparent 60%)
+}
+
+
+.bs-c57a826 {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: #FBBF24
+}
+
+
+.bs-4e827a4 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: clamp(44px, 6vw, 80px);
+   line-height: 1
+}
+
+
+.bs-3706a00 {
+  font-style: italic;
+   background: linear-gradient(90deg, #F3DDA8 0%, #C4B5FD 60%, #5EEAD4 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent
+}
+
+
+.bs-9ccb938 {
+  margin: 0;
+   max-width: 460px;
+   font-size: 18px;
+   color: #C9CED8
+}
+
+
+.bs-091c85b {
+  padding: 40px 36px;
+   border-radius: 24px;
+   border: 1px solid #3B629E;
+   background: #21457E;
+   display: flex;
+   flex-direction: column;
+   gap: 28px
+}
+
+
+.bs-1703f62 {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 20px;
+   align-items: end
+}
+
+
+.bs-f960b5f {
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   text-align: center
+}
+
+
+.bs-c108906 {
+  width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   background: #C9A55C;
+   border: 2px solid #F3DDA8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'JetBrains Mono', monospace;
+   font-weight: 500;
+   color: #0B1D3A
+}
+
+
+.bs-aa3cc46 {
+  font-size: 15px;
+   color: #F3DDA8;
+   font-weight: 600
+}
+
+
+.bs-336dca5 {
+  width: 88px;
+   height: 88px;
+   border-radius: 50%;
+   background: linear-gradient(135deg, #8B5CF6, #5EEAD4);
+   border: 2px solid #E9D5FF;
+   display: flex;
+   align-items: center;
+   justify-content: center
+}
+
+
+.bs-5049235 {
+  font-size: 15px;
+   color: #C4B5FD;
+   font-weight: 700
+}
+
+
+.bs-24486e6 {
+  height: 6px;
+   border-radius: 999px;
+   background: linear-gradient(90deg, #C9A55C 0%, #C9A55C 78%, #8B5CF6 90%, #5EEAD4 100%)
+}
+
+
+.bs-a43abca {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   gap: 24px
+}
+
+
+.bs-791add9 {
+  padding: 40px;
+   border-radius: 22px;
+   border: 1px solid #4A3C22;
+   background: linear-gradient(160deg, #2A2213 0%, #21457E 75%);
+   display: flex;
+   flex-direction: column;
+   gap: 16px
+}
+
+
+.bs-f083a20 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.05;
+   color: #FCD34D
+}
+
+
+.bs-d8efea4 {
+  margin: 0;
+   color: #C9CED8
+}
+
+
+.bs-4908ce3 {
+  display: flex;
+   gap: 32px;
+   flex-wrap: wrap;
+   padding-top: 8px
+}
+
+
+.bs-804b615 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 48px;
+   line-height: 1;
+   color: #F3DDA8
+}
+
+
+.bs-d63cffa {
+  font-size: 14px;
+   color: #BCC3D2
+}
+
+
+.bs-6ace0d0 {
+  padding: 40px;
+   border-radius: 22px;
+   border: 1px solid #44337A;
+   background: linear-gradient(160deg, #24183F 0%, #21457E 75%);
+   display: flex;
+   flex-direction: column;
+   gap: 16px
+}
+
+
+.bs-feea0c1 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.05;
+   color: #C4B5FD
+}
+
+
+.bs-25fcb64 {
+  font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 48px;
+   line-height: 1;
+   color: #E9D5FF
+}
+
+
+.bs-7646952 {
+  display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px
+}
+
+
+.bs-f355157 > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   background: linear-gradient(90deg, #C9A55C, #A78BFA);
+   color: #0B1D3A;
+   font-weight: 700;
+   font-size: 16px
+}
+
+
+.bs-69539f6 {
+  border-bottom: 1px solid #2E568F;
+   background: radial-gradient(800px 480px at 0% 0%, rgba(251,191,36,0.14), transparent 60%), radial-gradient(800px 480px at 100% 100%, rgba(20,184,166,0.22), transparent 60%)
+}
+
+
+.bs-703b01b {
+  font-family: 'JetBrains Mono', monospace;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: #5EEAD4
+}
+
+
+.bs-df14b22 {
+  font-style: italic;
+   background: linear-gradient(90deg, #FBBF24 0%, #5EEAD4 60%, #C4B5FD 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent
+}
+
+
+.bs-c17dd38.wp-block-image img {
+  width: 100%;
+   min-width: 720px;
+   height: auto;
+   display: block;
+   display: block;
+   max-width: none
+}
+
+
+.bs-7d127ca {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 24px
+}
+
+
+.bs-fc7e64a {
+  padding: 32px;
+   border-radius: 20px;
+   border: 1px solid #4A3C22;
+   background: linear-gradient(160deg, #2A2213 0%, #21457E 70%);
+   display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-c60ec07 {
+  margin: 0;
+   font-size: 22px;
+   font-weight: 600;
+   color: #FCD34D
+}
+
+
+.bs-02654dd {
+  padding: 32px;
+   border-radius: 20px;
+   border: 1px solid #44337A;
+   background: linear-gradient(160deg, #24183F 0%, #21457E 70%);
+   display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-d91348a {
+  margin: 0;
+   font-size: 22px;
+   font-weight: 600;
+   color: #C4B5FD
+}
+
+
+.bs-64e9ff4 {
+  padding: 32px;
+   border-radius: 20px;
+   border: 1px solid #1F5452;
+   background: linear-gradient(160deg, #0F2D30 0%, #21457E 70%);
+   display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-2483574 {
+  margin: 0;
+   font-size: 22px;
+   font-weight: 600;
+   color: #5EEAD4
+}
+
+
+.bs-12d0210 {
+  padding: 32px;
+   border-radius: 20px;
+   border: 1px solid #5A2338;
+   background: linear-gradient(160deg, #3A1424 0%, #21457E 70%);
+   display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-c004fcd {
+  margin: 0;
+   font-size: 22px;
+   font-weight: 600;
+   color: #FDA4AF
+}
+
+
+.bs-b688d6a > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   background: linear-gradient(90deg, #FBBF24, #5EEAD4);
+   color: #0B1D3A;
+   font-weight: 700;
+   font-size: 16px
+}
+
+
+.bs-80cde14 > .wp-block-button__link {
+  display: inline-flex;
+   align-items: center;
+   min-height: 54px;
+   padding: 0 32px;
+   border-radius: 999px;
+   border: 1px solid #1F5452;
+   color: #5EEAD4;
+   font-weight: 600;
+   font-size: 16px
+}
+
+
+.bs-dbd4db7 {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 112px 32px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 64px
+}
+
+
+.bs-e2a6a3a {
+  flex: 1 1 460px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px
+}
+
+
+.bs-434be4c {
+  margin: 0;
+   color: #B9BFCB;
+   max-width: 520px
+}
+
+
+.bs-5a416fc {
+  border-top: 1px solid #3A64A3
+}
+
+
+.bs-69b3a5e {
+  color: #BCC3D2
+}
+
+
+.bs-c44f61b {
+  font-family: 'JetBrains Mono', monospace;
+   color: #EDEFF3
+}
+
+
+.bs-7fea2bb {
+  display: flex;
+   justify-content: space-between;
+   gap: 16px;
+   padding: 18px 0;
+   border-bottom: 1px solid #3A64A3
+}
+
+
+.bs-552a558 {
+  flex: 1 1 420px;
+   padding: 44px 40px;
+   background: #264C8C;
+   border: 1px solid #3B629E;
+   border-radius: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 22px
+}
+
+
+.bs-59254e3 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: 38px;
+   line-height: 1.1
+}
+
+
+.bs-2d35d39 {
+  margin: 0;
+   color: #B9BFCB;
+   font-size: 15px
+}
+
+
+.bs-4f974c2 {
+  display: flex;
+   flex-direction: column;
+   gap: 8px
+}
+
+
+.bs-4ed169f {
+  font-size: 14px;
+   color: #C3C8D2
+}
+
+
+.bs-1687457 {
+  min-height: 50px;
+   padding: 0 16px;
+   background: #1A3A6E;
+   border: 1px solid #4670AE;
+   border-radius: 12px;
+   color: #EDEFF3;
+   font: inherit;
+   font-size: 16px
+}
+
+
+.bs-e66a306 {
+  min-height: 50px;
+   padding: 0 14px;
+   background: #1A3A6E;
+   border: 1px solid #4670AE;
+   border-radius: 12px;
+   color: #EDEFF3;
+   font: inherit;
+   font-size: 16px
+}
+
+
+.bs-1dd61c2 {
+  display: flex;
+   align-items: flex-start;
+   gap: 12px
+}
+
+
+.bs-2195b0b {
+  width: 22px;
+   height: 22px;
+   margin-top: 2px;
+   accent-color: #C9A55C
+}
+
+
+.bs-f8176b1 {
+  min-height: 54px;
+   border: 0;
+   border-radius: 999px;
+   background: #C9A55C;
+   color: #0B1D3A;
+   font: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   cursor: pointer
+}
+
+
+.bs-3502bda {
+  display: flex;
+   flex-direction: column;
+   gap: 16px
+}
+
+
+.bs-eef0637 {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   gap: 28px
+}
+
+
+.bs-8a309dc {
+  padding: 32px;
+   border-radius: 24px;
+   border: 1px solid #44337A;
+   background: linear-gradient(160deg, #24183F 0%, #21457E 70%);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 28px;
+   align-items: flex-start
+}
+
+
+.bs-a911c30.wp-block-image img {
+  flex: 0 0 140px;
+   width: 140px;
+   height: 175px;
+   object-fit: cover;
+   object-position: 50% 35%;
+   border-radius: 18px;
+   border: 1px solid #C9A55C
+}
+
+
+.bs-db4e227 {
+  flex: 1 1 220px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-c13cbaf {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: 34px;
+   line-height: 1.1
+}
+
+
+.bs-158f96e {
+  font-size: 15px;
+   color: #C4B5FD;
+   font-weight: 600;
+   letter-spacing: 0.04em
+}
+
+
+.bs-f3921ba {
+  margin: 0;
+   color: #C9CED8;
+   font-size: 16px
+}
+
+
+.bs-7aa78ba > .wp-block-button__link {
+  align-self: flex-start;
+   display: inline-flex;
+   align-items: center;
+   min-height: 44px;
+   gap: 10px;
+   font-weight: 600
+}
+
+
+.bs-1940858 {
+  padding: 32px;
+   border-radius: 24px;
+   border: 1px solid #1F5452;
+   background: linear-gradient(160deg, #0F2D30 0%, #21457E 70%);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 28px;
+   align-items: flex-start
+}
+
+
+.bs-4e7662b {
+  flex: 0 0 140px;
+   width: 140px;
+   height: 175px;
+   border-radius: 18px;
+   border: 1px solid #5EEAD4;
+   background: linear-gradient(160deg, #14232B 0%, #21457E 55%, #2E2152 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-size: 52px;
+   color: #5EEAD4
+}
+
+
+.bs-5755df1 {
+  border-bottom: 1px solid #2E568F;
+   background: radial-gradient(700px 420px at 20% 20%, rgba(124,58,237,0.26), transparent 62%), radial-gradient(700px 420px at 80% 80%, rgba(20,184,166,0.20), transparent 62%)
+}
+
+
+.bs-2bfbc72 {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 120px 32px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   gap: 28px
+}
+
+
+.bs-deb23a7.wp-block-image img {
+  width: 48px;
+   height: 48px;
+   display: block;
+   max-width: none
+}
+
+
+.bs-2ba8453 {
+  margin: 0;
+   font-family: 'Instrument Serif', Georgia, serif;
+   font-weight: 400;
+   font-size: clamp(44px, 6vw, 84px);
+   line-height: 1;
+   max-width: 960px
+}
+
+
+.bs-6c845f1 {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 16px
+}
+
+
+.bs-9f1cdb6 {
+  max-width: 1240px;
+   margin: 0 auto;
+   padding: 64px 32px 48px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px
+}
+
+
+.bs-bccb6a5 {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 40px
+}
+
+
+.bs-c967896 {
+  display: flex;
+   flex-direction: column;
+   gap: 14px;
+   max-width: 320px
+}
+
+
+.bs-4a7c5e7 {
+  display: flex;
+   align-items: center;
+   gap: 12px
+}
+
+
+.bs-389a14c.wp-block-image img {
+  height: 32px;
+   width: auto;
+   display: block
+}
+
+
+.bs-431eae7 {
+  margin: 0;
+   font-size: 14px;
+   color: #BCC3D2
+}
+
+
+.bs-6e73c39 {
+  display: flex;
+   flex-wrap: wrap;
+   gap: 64px;
+   font-size: 15px
+}
+
+
+.bs-3c969f1 {
+  display: flex;
+   flex-direction: column;
+   gap: 10px
+}
+
+
+.bs-40e94da {
+  font-size: 12px;
+   letter-spacing: 0.14em;
+   text-transform: uppercase;
+   color: #AEB7C9
+}
+
+
+.bs-bb7df21 {
+  color: #C3C8D2
+}
+
+
+.bs-96d532b {
+  max-width: 900px
+}
+
+
+.bs-30d0a2b {
+  padding-top: 28px;
+   border-top: 1px solid #2E568F;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   font-size: 13px;
+   color: #AEB7C9
+}
+
+
