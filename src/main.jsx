@@ -30,6 +30,7 @@ import './header-polish.css';
 import './header-floating.css';
 import './hero-mesh.css';
 import './hero-mesh-motion.css';
+import './page-consistency.css';
 
 const sections = [
   everyone,
@@ -46,10 +47,10 @@ const sections = [
 const navigation = [
   ['Assets', '#portfolio'],
   ['Token', '#token'],
+  ['Invest', '#invest'],
+  ['About Us', '#about'],
   ['Whitepaper', 'https://myblockstar.com/whitepaper/'],
   ['Ask JET', 'https://myblockstar.com/ask-jet/'],
-  ['About Us', '#about'],
-  ['Invest', '#invest'],
   ['Insights', 'https://myblockstar.com/insights/'],
 ];
 

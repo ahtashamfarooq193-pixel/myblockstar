@@ -1,0 +1,336 @@
+/* Shared editorial rhythm, while preserving each section's composition. */
+#top .bs-621ac33 {
+  display: none;
+}
+
+body,
+body * {
+  font-family: 'Inter Tight', Arial, sans-serif !important;
+}
+
+main :is(h1, h2, h3) {
+  font-weight: 500;
+}
+
+#top .bs-75c1c05 {
+  font-size: clamp(36px, 3.85vw, 68px);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+@media (max-width: 800px) {
+  #top .bs-75c1c05 {
+    font-size: clamp(20px, 6vw, 45px);
+  }
+}
+
+#top .bs-04ddf33 {
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+#top .bs-04ddf33 > p {
+  width: 100%;
+  text-align: center;
+}
+
+#everyone .bs-08d5e67 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#everyone .bs-5187f02,
+#everyone .bs-bd74c09 {
+  width: 100%;
+  max-width: 760px;
+}
+
+#everyone .bs-bd74c09 {
+  margin: 0;
+  color: var(--page-copy);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+:root {
+  --page-ink: #302c3b;
+  --page-copy: #625d6c;
+  --page-border: #e5e0e8;
+  --surface-paper: #faf9f6;
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) > div {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  border-bottom: 0;
+}
+
+main section:not(#top):not(#token) h2 {
+  color: var(--page-ink);
+  font-size: clamp(38px, 4.15vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+main section:not(#top):not(#token) :is(.bs-9ccb938, .bs-38b6d94, .bs-7f6905e, .bs-1f70e34, .bs-d8efea4, .bs-f3921ba) {
+  color: var(--page-copy);
+  line-height: 1.8;
+}
+
+main section:not(#top) .bs-08d5e67 {
+  gap: 32px;
+  margin-bottom: 0;
+}
+
+#everyone .bs-02e1edb,
+#owners .bs-7d127ca > div,
+#payouts .bs-a43abca > div {
+  border-color: var(--page-border);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #30273804;
+}
+
+#everyone .bs-e273cbe,
+#owners .bs-7d127ca h3 {
+  color: var(--page-ink);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#platform .bs-68ba019 > div {
+  border-radius: 24px;
+}
+
+#platform .bs-53ae860,
+#payouts .bs-f083a20,
+#payouts .bs-feea0c1,
+#invest .bs-6501551,
+#about .bs-c13cbaf {
+  color: var(--page-ink);
+  line-height: 1.15;
+}
+
+#portfolio .bs-f29dbe2 > div {
+  border-radius: 24px;
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26) .bs-aa09e59 {
+  color: var(--page-ink);
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26) .bs-0332600 {
+  color: var(--page-copy);
+}
+
+#token > .bs-47788f9 {
+  border-radius: 24px;
+}
+
+#owners .bs-7d127ca p {
+  color: var(--page-copy);
+  line-height: 1.75;
+}
+
+#invest .bs-552a558 {
+  border: 1px solid var(--page-border);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px #30273806;
+}
+
+#invest :is(.bs-1687457, .bs-e66a306) {
+  border: 1px solid var(--page-border);
+  border-radius: 10px;
+  color: var(--page-ink);
+  background: #f8f7f9;
+}
+
+#invest :is(.bs-1687457, .bs-e66a306):focus {
+  outline: 2px solid #00a98d;
+  outline-offset: 2px;
+  border-color: #00a98d;
+  background: #fff;
+}
+
+#about .bs-eef0637 {
+  gap: 40px;
+}
+
+#about .bs-eef0637 > div {
+  border-color: var(--page-border);
+}
+
+#about .bs-158f96e {
+  color: #746080;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+main section:not(#top) .wp-block-button__link,
+.bs-f8176b1 {
+  border-radius: 12px;
+  font-weight: 650;
+}
+
+main section:not(#top) .wp-block-button__link:focus-visible,
+.bs-f8176b1:focus-visible {
+  outline: 2px solid #008b73;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) > div {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+}
+
+@media (max-width: 800px) {
+  main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) > div {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  main section:not(#top):not(#token) h2 {
+    font-size: clamp(35px, 8vw, 46px);
+  }
+
+  main section:not(#top) .bs-08d5e67 {
+    gap: 20px;
+  }
+
+  #about .bs-eef0637 {
+    gap: 32px;
+  }
+}
+
+/* Inter Tight needs a steadier text rhythm than the previous serif pairing. */
+#top .bs-e6b7791 {
+  gap: 24px;
+}
+
+#top .bs-d994c4d {
+  max-width: 580px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#top .bs-f45d815 {
+  margin-top: 8px;
+}
+
+#top .bs-f45d815 > .wp-block-buttons {
+  gap: 12px;
+}
+
+#top .bs-75c1c05 .bs-62bede0 {
+  margin-top: 8px;
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) > div {
+  gap: 40px;
+}
+
+main section:not(#top) :is(.bs-5187f02, .bs-3502bda) {
+  gap: 16px;
+}
+
+main section:not(#top):not(#token) h2 {
+  line-height: 1.14;
+}
+
+#token h2 {
+  font-size: clamp(34px, 3.5vw, 50px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+main section:not(#top):not(#token) :is(.bs-9ccb938, .bs-38b6d94) {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#everyone .bs-02e1edb,
+#owners .bs-7d127ca > div {
+  padding: 24px;
+  gap: 10px;
+}
+
+#platform .bs-68ba019,
+#payouts .bs-a43abca,
+#owners .bs-7d127ca {
+  gap: 24px;
+}
+
+#platform .bs-53ae860 {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+#payouts .bs-a43abca > div {
+  padding: 30px;
+  gap: 18px;
+}
+
+#about .bs-db4e227 {
+  gap: 12px;
+}
+
+#about .bs-c13cbaf {
+  font-size: clamp(23px, 2vw, 29px);
+  line-height: 1.2;
+}
+
+#invest .bs-4f974c2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#invest .bs-form {
+  gap: 18px;
+}
+
+@media (max-width: 800px) {
+  #top .bs-e6b7791 {
+    gap: 20px;
+  }
+
+  #top .bs-d994c4d {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  #top .bs-f45d815 {
+    margin-top: 4px;
+  }
+
+  main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) > div {
+    gap: 28px;
+  }
+
+  main section:not(#top):not(#token) :is(.bs-9ccb938, .bs-38b6d94) {
+    font-size: 15px;
+  }
+
+  #everyone .bs-02e1edb,
+  #owners .bs-7d127ca > div,
+  #payouts .bs-a43abca > div {
+    padding: 22px;
+  }
+
+  #platform .bs-68ba019,
+  #payouts .bs-a43abca,
+  #owners .bs-7d127ca {
+    gap: 16px;
+  }
+
+  #about .bs-c13cbaf {
+    font-size: 23px;
+  }
+}

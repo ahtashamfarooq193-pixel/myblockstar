@@ -7,7 +7,7 @@ const browser = await chromium.launch({
   executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
   headless: true,
 });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce' });
 const errors = [];
 const originalSource = fs.readFileSync('../homepage-reference.html', 'utf8');
 page.on('pageerror', (error) => errors.push(error.message));
@@ -71,6 +71,7 @@ await page.locator('#inv-name').fill('Preview Check');
 await page.locator('#inv-email').fill('preview@example.com');
 await page.locator('#inv-acc').check();
 await page.locator('button[type="submit"]').click();
+await page.getByRole('status').waitFor({ state: 'visible' });
 const formPreview = await page.getByRole('status').isVisible();
 
 await page.setViewportSize({ width: 390, height: 844 });
