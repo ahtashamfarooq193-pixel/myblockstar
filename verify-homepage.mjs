@@ -47,11 +47,12 @@ for (const section of await page.locator('main section').all()) {
 
 await page.screenshot({ path: 'screenshots/desktop-full.png', fullPage: true });
 await page.locator('.brand').click();
-await page.waitForTimeout(1000);
+await page.waitForFunction(() => window.scrollY < 10, { timeout: 5000 });
 const logoScroll = await page.evaluate(() => window.scrollY);
 await page.locator('.primary-navigation a[href="#token"]').click();
 await page.waitForTimeout(1000);
 const tokenScroll = await page.locator('#token').evaluate((element) => element.getBoundingClientRect().top);
+const expectedScrollOffset = await page.evaluate(() => parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop));
 await page.reload({ waitUntil: 'networkidle' });
 await page.waitForTimeout(600);
 const reloadScroll = await page.evaluate(() => window.scrollY);
@@ -101,7 +102,7 @@ const result = {
   desktopOverflow,
   mobileOverflow,
   logoReturnsToTop: logoScroll < 10,
-  navigationReachesToken: Math.abs(tokenScroll - 30) < 10,
+  navigationReachesToken: Math.abs(tokenScroll - expectedScrollOffset) < 10,
   reloadReturnsToTop: reloadScroll === 0,
   formPreview,
   mobileMenu,

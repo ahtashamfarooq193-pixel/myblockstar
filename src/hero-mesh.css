@@ -1,0 +1,354 @@
+/* Pastel mesh uses the four logo colors around an open, light center. */
+.hero-composition::before {
+  background:
+    radial-gradient(ellipse at 44% 40%, #fffefa99 0%, #fffefa45 32%, transparent 73%),
+    radial-gradient(ellipse at 8% 19%, #00cba952 0%, #00cba920 36%, transparent 70%),
+    radial-gradient(ellipse at 81% 8%, #d94ef541 0%, #d94ef51c 35%, transparent 68%),
+    radial-gradient(ellipse at 92% 79%, #ffbd2857 0%, #ffbd2826 38%, transparent 74%),
+    radial-gradient(ellipse at 23% 94%, #ff5a3a40 0%, #ff5a3a1a 36%, transparent 70%),
+    radial-gradient(ellipse at 62% 64%, #00cba91c 0%, transparent 56%),
+    #faf9f5;
+  background-size: 150% 145%;
+  background-position: 45% 50%;
+  animation: none;
+}
+
+.hero-floating-colors {
+  position: absolute;
+  inset: -104px 0 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mesh-blob {
+  translate: calc(var(--mouse-color-x, 0px) * var(--mouse-depth, 1)) calc(var(--mouse-color-y, 0px) * var(--mouse-depth, 1));
+  position: absolute;
+  width: clamp(280px, 38vw, 650px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.46;
+  animation: mesh-float-visible 14s ease-in-out infinite alternate;
+}
+
+.mesh-blob-teal {
+  left: -8%;
+  top: 1%;
+  background: radial-gradient(circle, #00cba985, #00cba900 70%);
+  --float-x: 28vw;
+  --float-y: 15vh;
+}
+
+.mesh-blob-purple {
+  --mouse-depth: 0.7;
+  right: -5%;
+  top: 8%;
+  background: radial-gradient(circle, #d94ef57a, #d94ef500 70%);
+  --float-x: -25vw;
+  --float-y: 25vh;
+  animation-duration: 17s;
+  animation-delay: -5s;
+}
+
+.mesh-blob-gold {
+  --mouse-depth: 1.15;
+  right: 3%;
+  bottom: -18%;
+  background: radial-gradient(circle, #ffbd2899, #ffbd2800 70%);
+  --float-x: -22vw;
+  --float-y: -25vh;
+  animation-duration: 15s;
+  animation-delay: -8s;
+}
+
+.mesh-blob-orange {
+  --mouse-depth: 0.85;
+  left: 10%;
+  bottom: -18%;
+  background: radial-gradient(circle, #ff5a3a80, #ff5a3a00 70%);
+  --float-x: 25vw;
+  --float-y: -20vh;
+  animation-duration: 18s;
+  animation-delay: -3s;
+}
+
+@keyframes mesh-float-visible {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  to {
+    transform: translate3d(var(--float-x), var(--float-y), 0) scale(1.2);
+  }
+}
+
+@keyframes hero-mesh-drift {
+  0% {
+    background-position: 45% 50%, 5% 20%, 90% 0%, 80% 90%, 15% 95%, 55% 60%;
+  }
+  50% {
+    background-position: 55% 42%, 65% 65%, 30% 50%, 65% 25%, 70% 40%, 15% 90%;
+  }
+  100% {
+    background-position: 48% 55%, 25% 95%, 90% 80%, 20% 85%, 5% 20%, 95% 15%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob {
+    animation: none;
+    translate: none;
+  }
+  .hero-composition::before {
+    animation: none;
+  }
+}
+
+#top,
+#top .bs-75c1c05,
+#top .hero-title-line {
+  color: #292736;
+}
+
+#top h1 .bs-62bede0 {
+  color: #147f73;
+}
+
+#top .bs-96f48cb {
+  color: #69533b;
+}
+
+#top .bs-621ac33 {
+  background: #a27c37;
+}
+
+#top .bs-d994c4d,
+#top .bs-d553aff {
+  color: #555360;
+}
+
+#top .bs-04ddf33 > p:first-child {
+  color: #88621e;
+}
+
+#top .bs-04ddf33:nth-child(2) > p:first-child {
+  color: #8852a3;
+}
+
+#top .bs-04ddf33:nth-child(3) > p:first-child {
+  color: #147f73;
+}
+
+#top .bs-04ddf33:nth-child(4) > p:first-child {
+  color: #b84c31;
+}
+
+#top .bs-9813cbb > .wp-block-button__link {
+  border-color: #70647940;
+  color: #36303f;
+  background: #ffffff6b;
+  box-shadow: inset 0 1px 0 #ffffffb3;
+}
+
+#top .bs-c99a3ff > .wp-block-button__link {
+  border-color: #906aa442;
+  color: #71458a;
+  background: #ffffff45;
+}
+
+#top .bs-9813cbb > .wp-block-button__link:hover,
+#top .bs-c99a3ff > .wp-block-button__link:hover {
+  border-color: #9270a485;
+  color: #4e315f;
+  background: #ffffffc4;
+}
+
+.hero-composition .orbit {
+  border-color: #79658e22;
+}
+
+.hero-composition .scroll-cue {
+  color: #85652c;
+}
+
+.hero-composition .scroll-cue span {
+  background: #85652c55;
+}
+
+.property-artwork .architecture {
+  filter: drop-shadow(0 20px 26px #3b2c4824);
+}
+
+.property-artwork .asset-chip {
+  box-shadow: 0 5px 18px #3c2d4214;
+}
+
+.property-artwork .asset-chip,
+.property-artwork .artwork-caption {
+  border: 1px solid #74657e32;
+  border-radius: 12px;
+  color: #393042;
+  background: #ffffff26;
+  box-shadow: inset 0 1px 0 #ffffffcc, 0 6px 18px #49355e12;
+  backdrop-filter: blur(20px) saturate(135%);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+}
+
+.property-artwork .chip-gold::before {
+  background: #a77821;
+}
+
+.property-artwork .chip-teal::before {
+  background: #078573;
+}
+
+.property-artwork .chip-purple::before {
+  background: #8852a3;
+}
+
+/* Let the pastel hero show through the navigation. */
+.site-header .brand {
+  position: relative;
+}
+
+.site-header .brand::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #292736;
+  mask: url('/assets/blockstar-logo.png') center / 100% auto no-repeat;
+  -webkit-mask: url('/assets/blockstar-logo.png') center / 100% auto no-repeat;
+  clip-path: inset(0 0 0 26%);
+  pointer-events: none;
+}
+
+.page-shell[inert] .brand::after {
+  opacity: 0;
+}
+
+.site-header .header-inner,
+.site-header.is-scrolled .header-inner {
+  border-color: #74657e26;
+  background: transparent;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    inset 0 -1px 0 #ffffff40,
+    0 8px 28px #49355e14;
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+/* Quarter colors belong to the cards; labels share one readable ink color. */
+#payouts .bs-f960b5f:nth-child(1) {
+  background: #eed5f8;
+  border-color: #d94ef526;
+}
+
+#payouts .bs-f960b5f:nth-child(2) {
+  background: #ccf2e9;
+  border-color: #00cba926;
+}
+
+#payouts .bs-f960b5f:nth-child(3) {
+  background: #ffedbb;
+  border-color: #ffbd2833;
+}
+
+#payouts .bs-f960b5f:nth-child(4) {
+  background: #ffddd3;
+  border-color: #ff5a3a26;
+}
+
+#payouts .bs-f960b5f .bs-c108906,
+#payouts .bs-f960b5f .bs-aa3cc46 {
+  color: #34303e;
+}
+
+.site-header.is-scrolled .header-inner {
+  border-color: #74657e26;
+  background: #fffdf9ed;
+  box-shadow: inset 0 1px 0 #ffffffed, 0 8px 28px #49355e1a;
+}
+
+.site-header .primary-navigation a,
+.site-header .primary-navigation a:hover,
+.site-header .primary-navigation a.is-current {
+  color: #393042;
+}
+
+.site-header .language-button {
+  border-color: #74657e24;
+  color: #43364e;
+  background: #ffffff70;
+}
+
+.site-header .language-button:hover,
+.site-header .language-button[aria-expanded="true"] {
+  border-color: #88629f80;
+  color: #43364e;
+  background: #ffffff66;
+}
+
+.site-header .language-globe,
+.site-header .language-caret {
+  color: #755889;
+  border-color: #755889;
+}
+
+.site-header .menu-toggle {
+  border-color: #78618b40;
+  color: #43364e;
+  background: #ffffff29;
+}
+
+.site-header .menu-toggle span {
+  background: #43364e;
+}
+
+.site-header .nav-moving-highlight {
+  border-color: #269e852e;
+  background: linear-gradient(135deg, #00cba91c, #00cba90c);
+  box-shadow: inset 0 1px 0 #ffffffb3;
+}
+
+.site-header .primary-navigation a.is-current {
+  color: #096c59;
+}
+
+.site-header .primary-navigation a.is-current::before {
+  background: #078e73;
+}
+
+.site-header .primary-navigation a:focus-visible {
+  outline: 2px solid #128575;
+  outline-offset: -2px;
+}
+
+.site-header .buy-button {
+  box-shadow: inset 0 1px 0 #ffffff66, 0 4px 12px #008b711c;
+  font-weight: 750;
+}
+
+@media (min-width: 1101px) {
+  .site-header .primary-navigation a {
+    padding: 11px 12px;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .site-header .header-inner {
+    border-radius: 20px;
+  }
+
+  .site-header .header-actions {
+    gap: 9px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .site-header .primary-navigation {
+    border-color: #ddd4e5;
+    background: #fffdf9f7;
+  }
+}

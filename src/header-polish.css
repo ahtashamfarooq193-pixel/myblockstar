@@ -1,0 +1,209 @@
+.site-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9cde712;
+  background: linear-gradient(110deg, #262730f7, #2e2939f7);
+  box-shadow: none;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: padding 250ms ease, box-shadow 250ms ease, background 250ms ease;
+}
+
+.site-header.is-scrolled {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #262630ed;
+  box-shadow: 0 8px 30px #201a2b14;
+}
+
+.header-inner {
+  height: 64px;
+  gap: 16px;
+}
+
+.brand {
+  min-height: 48px;
+  transition: opacity 200ms, transform 200ms;
+}
+
+.brand:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.primary-navigation {
+  gap: 3px;
+  padding: 5px;
+  border-color: #d7c7e51a;
+  border-radius: 14px;
+  background: #ffffff04;
+  box-shadow: inset 0 1px 0 #ffffff05;
+}
+
+.primary-navigation a {
+  position: relative;
+  padding: 12px 13px;
+  border-radius: 9px;
+  color: #d5d0dd;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  transition: color 180ms, background 180ms, box-shadow 180ms;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus-visible {
+  color: #ffffff;
+  background: #bc9bd515;
+}
+
+.primary-navigation a.is-current {
+  color: #f3e9fc;
+  background: linear-gradient(135deg, #ba96d32b, #9a76bd1a);
+  box-shadow: inset 0 0 0 1px #c2a4db40, 0 2px 8px #100b1810;
+}
+
+.primary-navigation a.is-current::before {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 3px;
+  height: 3px;
+  margin: 0;
+  border-radius: 50%;
+  background: #9be0ce;
+  box-shadow: none;
+  transform: translateX(-50%);
+}
+
+.header-actions {
+  gap: 10px;
+}
+
+.site-header .language-button {
+  min-height: 48px;
+  padding: 0 13px;
+  border-color: #d6c7e329;
+  border-radius: 12px;
+  color: #ddd7e5;
+  background: #ffffff03;
+  font-size: 13px;
+}
+
+.site-header .language-button:hover,
+.site-header .language-button[aria-expanded="true"] {
+  border-color: #b69ccb73;
+  color: #ffffff;
+  background: #ba96d312;
+}
+
+.site-header .language-globe {
+  color: #a8d7cc;
+}
+
+.site-header .buy-button {
+  min-height: 48px;
+  padding: 0 23px;
+  border: 1px solid #bea0d6;
+  border-radius: 12px;
+  color: #ffffff;
+  background: linear-gradient(130deg, #a283be, #7b5a99);
+  box-shadow: inset 0 1px 0 #ffffff29, 0 5px 16px #100b181a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.site-header .buy-button:hover {
+  background: linear-gradient(130deg, #ae8dcc, #8966a6);
+  box-shadow: inset 0 1px 0 #ffffff29, 0 8px 20px #100b1826;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .header-inner {
+    gap: 12px;
+  }
+  .primary-navigation a {
+    padding: 12px 9px;
+    font-size: 12px;
+  }
+  .site-header .buy-button {
+    padding: 0 16px;
+  }
+  .site-header .language-button {
+    padding: 0 10px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .site-header,
+  .site-header.is-scrolled {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-inner {
+    height: 54px;
+  }
+  .primary-navigation {
+    top: calc(100% + 8px);
+    padding: 10px;
+    border-color: #d7c7e529;
+    border-radius: 16px;
+    background: #302b3b;
+    box-shadow: 0 18px 40px #100b1833;
+  }
+  .primary-navigation a {
+    padding: 14px;
+    font-size: 14px;
+    background: #ffffff04;
+  }
+  .menu-toggle {
+    width: 48px;
+    height: 48px;
+    border-color: #d6c7e329;
+    border-radius: 12px;
+    background: #ffffff04;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    gap: 8px;
+  }
+  .header-actions {
+    gap: 6px;
+  }
+  .site-header .language-button {
+    min-height: 44px;
+    padding: 0 8px;
+    gap: 3px;
+    font-size: 11px;
+  }
+  .site-header .buy-button {
+    min-height: 44px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+  .menu-toggle {
+    width: 38px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-actions {
+    gap: 5px;
+  }
+  .site-header .language-button {
+    padding: 0 6px;
+    font-size: 10px;
+  }
+  .site-header .buy-button {
+    padding: 0 9px;
+    font-size: 10px;
+  }
+  .menu-toggle {
+    width: 32px;
+  }
+}

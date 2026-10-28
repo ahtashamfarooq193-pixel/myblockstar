@@ -1,0 +1,640 @@
+/* One neutral palette connects the editorial sections and selected bento grids. */
+:root {
+  --paper: #fbfaf7;
+  --ink: #19334e;
+  --soft-ink: #566677;
+}
+
+html {
+  scroll-padding-top: 122px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #10294cf5;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 5px 25px #071c3014;
+}
+
+/* Header follows the same left edge as the hero copy. */
+.header-inner {
+  max-width: 1440px;
+  padding-right: 64px;
+  padding-left: 64px;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.primary-navigation {
+  margin-left: auto;
+}
+
+.buy-button {
+  padding: 0 22px;
+}
+
+.language-simple {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 12px;
+  border: 1px solid #a8c6ea33;
+  border-radius: 11px;
+  background: #ffffff05;
+}
+
+.language-globe {
+  display: flex;
+  color: #94d4cd;
+}
+
+.language-simple select {
+  width: 82px;
+  min-height: 44px;
+  border: 0;
+  color: #e1e8f0;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.language-simple option {
+  color: #19334e;
+  background: #ffffff;
+}
+
+/* Translation runs through our selector without floating provider controls. */
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-spinner-pos,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-yAWNEb-L7lbkb,
+body > .skiptranslate,
+#translation-engine {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+html body {
+  top: 0 !important;
+}
+
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.wp-block-button__link::after,
+.bs-f29dbe2 > div::after,
+.wp-block-button__link > span[aria-hidden="true"],
+.asset-chip > span {
+  display: none !important;
+  content: none !important;
+}
+
+.bs-fb84486 > .wp-block-button__link,
+.bs-f355157 > .wp-block-button__link,
+.bs-b688d6a > .wp-block-button__link {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media (max-width: 1439px) {
+  .header-inner {
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-inner {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .header-actions {
+    margin-left: auto;
+  }
+  .primary-navigation {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-inner {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .language-simple {
+    min-height: 44px;
+    padding: 0 6px;
+  }
+  .language-globe {
+    display: none;
+  }
+  .language-simple select {
+    width: 72px;
+    min-height: 42px;
+    font-size: 12px;
+  }
+  .buy-button {
+    padding: 0 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding-right: 22px;
+    padding-left: 22px;
+    gap: 8px;
+  }
+  .brand img {
+    width: 118px;
+  }
+  .header-actions {
+    gap: 5px;
+  }
+  .language-simple {
+    padding: 0 4px;
+  }
+  .language-simple select {
+    width: 65px;
+    font-size: 11px;
+  }
+  .buy-button {
+    padding: 0 11px;
+    font-size: 11px;
+  }
+  .menu-toggle {
+    width: 37px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand img {
+    width: 85px;
+  }
+  .language-simple select {
+    width: 58px;
+  }
+  .buy-button {
+    padding: 0 8px;
+    font-size: 10px;
+  }
+  .menu-toggle {
+    width: 32px;
+  }
+}
+
+main section:not(#top) > div {
+  border-bottom: 0;
+}
+
+main section:is(#everyone, #portfolio, #owners, #about) {
+  background: #ffffff;
+}
+
+main section:is(#platform, #payouts, #invest) {
+  background: var(--paper);
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) {
+  --muted: var(--soft-ink);
+  --line: #1b36521c;
+}
+
+main section:not(#top) > div {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+/* Ownership: a clear introduction, illustrated stage, and understated benefits. */
+#everyone .bs-67b5f98 {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  padding: 44px 70px 28px;
+  border: 1px solid #dfe5e9;
+  border-radius: 26px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #325571, transparent 75%),
+    #17354f;
+  box-shadow: 0 20px 55px #17354f0b;
+}
+
+#everyone .bs-67b5f98::before {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid #ffffff0b;
+  border-radius: 17px;
+  content: '';
+  pointer-events: none;
+}
+
+#everyone .bs-c68a13f {
+  gap: 35px;
+  padding-top: 6px;
+}
+
+#everyone .bs-02e1edb {
+  border-color: #d3b375;
+  padding-left: 23px;
+}
+
+#platform .bs-68ba019 {
+  gap: 48px;
+}
+
+#platform .bs-68ba019 > div {
+  border-top-color: #c6cdd3;
+  padding-top: 32px;
+}
+
+#platform .bs-b554dad {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd5c7;
+  border-radius: 17px;
+  background: #ede7db;
+}
+
+#platform .bs-b554dad img {
+  filter: brightness(0.62) saturate(0.8);
+}
+
+#platform .bs-18f2a80 .bs-b554dad {
+  border-color: #dedbe6;
+  background: #ece9f2;
+}
+
+#platform .bs-f908efc .bs-b554dad {
+  border-color: #d3e1da;
+  background: #e3ede7;
+}
+
+#platform .bs-53ae860 {
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+/* Portfolio: one dark flagship with two lighter destination tiles. */
+#portfolio .bs-f29dbe2 {
+  grid-template-rows: repeat(2, 245px);
+  gap: 22px;
+}
+
+#portfolio .bs-2723de9 {
+  border-color: #29435b;
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 80% 10%, #a88a5438, transparent 75%),
+    #18334c;
+}
+
+#portfolio .bs-8e9a4b1 {
+  border-color: #d5e3dd;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f1f6f2, #e3eee8);
+}
+
+#portfolio .bs-923ea26 {
+  border-color: #dfdce7;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f5f3f8, #eae6f1);
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26) h3 {
+  color: #213b53;
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26) .bs-0332600 {
+  color: #536576;
+}
+
+#portfolio .bs-ee0c412 {
+  color: #387b6d;
+}
+
+#portfolio .bs-7feb0fd {
+  color: #75618c;
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26) .bs-5736211 {
+  top: 54px;
+  width: 52%;
+  opacity: 0.75;
+  filter: brightness(0.62) saturate(0.7);
+}
+
+#portfolio :is(.bs-8e9a4b1, .bs-923ea26)::after {
+  color: #455e6b;
+  border-color: #82939d44;
+  background: #ffffff66;
+}
+
+#portfolio .bs-f29dbe2 > div:hover {
+  border-color: #b39663;
+  box-shadow: 0 18px 38px #19334e12;
+}
+
+/* The token block is a contained navy feature within a white section. */
+main section#token {
+  padding: 0 32px 80px;
+  background: #ffffff;
+}
+
+#token > .bs-47788f9 {
+  width: 100%;
+  max-width: 1408px;
+  padding: 76px 48px;
+  border: 1px solid #34506b;
+  border-radius: 30px;
+  background:
+    radial-gradient(ellipse at 0% 100%, #244f6555, transparent 60%),
+    #142f4b;
+  box-shadow: 0 20px 60px #18334c0c;
+}
+
+#token .bs-68f4b5a,
+#token .bs-b9c7bc8 {
+  border-color: #8aa5bd38;
+  background: #ffffff07;
+}
+
+#token .bs-68f4b5a:first-child {
+  background: linear-gradient(135deg, #ffffff0a, #8b5cf610);
+}
+
+/* Payouts: a clean timeline and two editorial columns on warm paper. */
+#payouts .bs-091c85b {
+  padding: 34px 28px 28px;
+  border: 1px solid #e4e1da;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 9px 30px #19334e04;
+}
+
+#payouts .bs-24486e6 {
+  opacity: 0.65;
+  height: 3px;
+}
+
+#payouts .bs-a43abca {
+  padding: 8px 0;
+}
+
+#payouts .bs-6ace0d0 {
+  border-left-color: #dcd7cc;
+}
+
+#payouts .bs-f083a20 {
+  color: #18334c;
+}
+
+#payouts .bs-feea0c1 {
+  color: #5f5172;
+}
+
+/* Property owners: illustration and benefits sit alongside one another. */
+#owners > .bs-b74d80f {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 44px 60px;
+}
+
+#owners .bs-08d5e67,
+#owners .bs-7646952 {
+  grid-column: 1 / -1;
+}
+
+#owners .bs-67b5f98 {
+  display: flex;
+  align-items: center;
+  min-height: 325px;
+  padding: 26px;
+  border: 1px solid #35506a;
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 0% 0%, #3b5b6f88, transparent 75%),
+    #18334c;
+}
+
+#owners .bs-7d127ca {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+#owners .bs-7d127ca > div {
+  padding-top: 20px;
+  border-color: #ccb888;
+}
+
+#owners .bs-7d127ca h3 {
+  font-size: 18px;
+}
+
+#owners .bs-7d127ca p {
+  font-size: 14px;
+}
+
+/* Investor form returns to a bright surface, with a clear gold action. */
+#invest .bs-552a558 {
+  color: #19334e;
+  border: 1px solid #e0ddd5;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 0 16px 45px #18334c0a;
+}
+
+#invest .bs-552a558 .bs-2d35d39,
+#invest .bs-4ed169f {
+  color: #576777;
+}
+
+#invest .bs-1687457,
+#invest .bs-e66a306 {
+  border-color: #d9dfe3;
+  border-radius: 9px;
+  color: #213b53;
+  background: #f7f8f9;
+}
+
+#invest .bs-1687457:focus,
+#invest .bs-e66a306:focus {
+  border-color: #ab8a4f;
+  background: #ffffff;
+}
+
+#invest .bs-7fea2bb {
+  padding: 18px 0;
+}
+
+#about .bs-eef0637 {
+  gap: 60px;
+}
+
+#about .bs-eef0637 > div {
+  grid-template-columns: 155px 1fr;
+  padding-top: 30px;
+  border-color: #d8dee3;
+}
+
+#about .bs-eef0637 figure img {
+  width: 155px !important;
+  height: 205px !important;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px #19334e0c;
+}
+
+#about .bs-f3921ba {
+  font-size: 15px;
+}
+
+@media (max-width: 1100px) {
+  html {
+    scroll-padding-top: 104px;
+  }
+  main section:not(#top) > div {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #token > .bs-47788f9 {
+    padding: 55px 34px;
+  }
+  #owners > .bs-b74d80f {
+    gap: 36px;
+  }
+  #owners .bs-67b5f98 {
+    min-height: 290px;
+  }
+  #about .bs-eef0637 > div {
+    grid-template-columns: 110px 1fr;
+    gap: 22px;
+  }
+  #about .bs-eef0637 figure img {
+    width: 110px !important;
+    height: 155px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  main section:not(#top) > div {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  #everyone .bs-67b5f98 {
+    padding: 25px;
+  }
+  #platform .bs-68ba019 {
+    gap: 24px;
+  }
+  main section#token {
+    padding: 0 20px 60px;
+  }
+  #token > .bs-47788f9 {
+    padding: 40px 28px;
+    border-radius: 24px;
+  }
+  #owners > .bs-b74d80f {
+    grid-template-columns: 1fr;
+  }
+  #owners .bs-08d5e67,
+  #owners .bs-7646952 {
+    grid-column: auto;
+  }
+  #owners .bs-67b5f98 {
+    min-height: 230px;
+  }
+  #about .bs-eef0637 > div {
+    grid-template-columns: 135px 1fr;
+  }
+  #about .bs-eef0637 figure img {
+    width: 135px !important;
+    height: 180px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 98px;
+  }
+}
+
+@media (max-width: 480px) {
+  main section:not(#top) > div {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+  #everyone .bs-67b5f98 {
+    padding: 17px;
+    border-radius: 18px;
+  }
+  #everyone .bs-c68a13f {
+    gap: 24px;
+  }
+  #portfolio .bs-f29dbe2 {
+    grid-template-rows: 340px 210px 210px;
+    gap: 15px;
+  }
+  #portfolio .bs-f29dbe2 > div {
+    border-radius: 18px;
+  }
+  main section#token {
+    padding: 0 13px 50px;
+  }
+  #token > .bs-47788f9 {
+    padding: 35px 20px;
+    gap: 30px;
+  }
+  #token .bs-ef3c548 {
+    font-size: 9px;
+  }
+  #payouts .bs-091c85b {
+    padding: 24px 10px 20px;
+    border-radius: 16px;
+  }
+  #payouts .bs-aa3cc46,
+  #payouts .bs-5049235 {
+    font-size: 10px;
+  }
+  #payouts .bs-6ace0d0 {
+    border-left: 0;
+  }
+  #owners .bs-67b5f98 {
+    min-height: 180px;
+    padding: 20px 15px;
+    border-radius: 18px;
+  }
+  #owners .bs-7d127ca {
+    gap: 25px 20px;
+  }
+  #owners .bs-7d127ca h3 {
+    font-size: 16px;
+  }
+  #owners .bs-7d127ca p {
+    font-size: 14px;
+  }
+  #about .bs-eef0637 > div {
+    grid-template-columns: 95px 1fr;
+    gap: 20px;
+  }
+  #about .bs-eef0637 figure img {
+    width: 95px !important;
+    height: 135px !important;
+    border-radius: 10px;
+  }
+  #about .bs-f3921ba {
+    font-size: 14px;
+  }
+}

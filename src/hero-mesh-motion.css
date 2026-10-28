@@ -1,0 +1,100 @@
+@property --mesh-teal-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 8%;
+}
+
+@property --mesh-teal-y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 15%;
+}
+
+@property --mesh-purple-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 90%;
+}
+
+@property --mesh-purple-y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 12%;
+}
+
+@property --mesh-gold-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 85%;
+}
+
+@property --mesh-gold-y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 90%;
+}
+
+@property --mesh-orange-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 12%;
+}
+
+@property --mesh-orange-y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 85%;
+}
+
+.hero-composition::before {
+  background: #faf9f5;
+}
+
+.hero-floating-colors {
+  background:
+    radial-gradient(ellipse at 43% 42%, #fffefa8c, #fffefa20 40%, transparent 72%),
+    radial-gradient(ellipse 65% 85% at calc(var(--mesh-teal-x) + var(--mouse-color-x, 0px) * 0.3) var(--mesh-teal-y), #00cba952, transparent 78%),
+    radial-gradient(ellipse 65% 80% at var(--mesh-purple-x) calc(var(--mesh-purple-y) + var(--mouse-color-y, 0px) * 0.3), #d94ef541, transparent 78%),
+    radial-gradient(ellipse 70% 85% at calc(var(--mesh-gold-x) + var(--mouse-color-x, 0px) * 0.2) var(--mesh-gold-y), #ffbd285c, transparent 80%),
+    radial-gradient(ellipse 65% 80% at var(--mesh-orange-x) calc(var(--mesh-orange-y) + var(--mouse-color-y, 0px) * 0.2), #ff5a3a40, transparent 78%);
+  animation: blended-mesh-flow 16s ease-in-out infinite alternate;
+}
+
+@keyframes blended-mesh-flow {
+  0% {
+    --mesh-teal-x: 8%;
+    --mesh-teal-y: 15%;
+    --mesh-purple-x: 90%;
+    --mesh-purple-y: 12%;
+    --mesh-gold-x: 85%;
+    --mesh-gold-y: 90%;
+    --mesh-orange-x: 12%;
+    --mesh-orange-y: 85%;
+  }
+  50% {
+    --mesh-teal-x: 35%;
+    --mesh-teal-y: 65%;
+    --mesh-purple-x: 65%;
+    --mesh-purple-y: 32%;
+    --mesh-gold-x: 20%;
+    --mesh-gold-y: 15%;
+    --mesh-orange-x: 82%;
+    --mesh-orange-y: 70%;
+  }
+  100% {
+    --mesh-teal-x: 80%;
+    --mesh-teal-y: 20%;
+    --mesh-purple-x: 15%;
+    --mesh-purple-y: 75%;
+    --mesh-gold-x: 55%;
+    --mesh-gold-y: 85%;
+    --mesh-orange-x: 45%;
+    --mesh-orange-y: 8%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-floating-colors {
+    animation: none;
+  }
+}

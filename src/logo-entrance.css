@@ -1,0 +1,242 @@
+.logo-entrance {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  perspective: 1000px;
+  animation: logo-reveal-page 2950ms ease both;
+}
+
+.logo-entrance::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 45%, #453b5333, transparent 65%),
+    #252631;
+  content: '';
+  animation: entrance-backdrop-reveal 850ms ease 1950ms both;
+}
+
+.entrance-dock {
+  position: relative;
+  width: clamp(120px, 12vw, 170px);
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  animation: logo-dock-to-header 850ms cubic-bezier(0.76, 0, 0.24, 1) 1950ms both;
+}
+
+.entrance-mark {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  animation: logo-settle 700ms cubic-bezier(0.22, 0.61, 0.36, 1) 1250ms both;
+}
+
+.entrance-sheen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+  opacity: 0;
+  pointer-events: none;
+  animation: logo-light-sweep 550ms ease 1450ms both;
+}
+
+.page-shell[inert] .brand img {
+  opacity: 0;
+}
+
+.entrance-piece {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-origin: center;
+  filter: drop-shadow(0 8px 5px #00000026);
+  animation: logo-piece-arrive 1300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  user-select: none;
+}
+
+.entrance-piece-purple {
+  --origin-x: -55vw;
+  --origin-y: -55vh;
+  --spin: -125deg;
+  --tilt: 65deg;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.entrance-piece-teal {
+  --origin-x: 55vw;
+  --origin-y: -55vh;
+  --spin: 125deg;
+  --tilt: -65deg;
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  animation-delay: 80ms;
+}
+
+.entrance-piece-orange {
+  --origin-x: 55vw;
+  --origin-y: 55vh;
+  --spin: -100deg;
+  --tilt: 65deg;
+  clip-path: polygon(100% 100%, 0 100%, 50% 50%);
+  animation-delay: 160ms;
+}
+
+.entrance-piece-yellow {
+  --origin-x: -55vw;
+  --origin-y: 55vh;
+  --spin: 100deg;
+  --tilt: -65deg;
+  clip-path: polygon(0 100%, 0 0, 50% 50%);
+  animation-delay: 240ms;
+}
+
+.entrance-skip {
+  position: absolute;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid #ffffff26;
+  border-radius: 9px;
+  color: #ded8e6;
+  background: #ffffff05;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.entrance-loading-track {
+  position: absolute;
+  top: calc(50% + clamp(60px, 6vw, 85px) + 26px);
+  left: 50%;
+  width: 88px;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #ffffff14;
+  transform: translateX(-50%);
+}
+
+.entrance-loading-track > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #cd68ef, #70d7c3);
+  transform-origin: left center;
+  animation: entrance-loading-fill 1950ms ease-in-out both;
+}
+
+.entrance-loading-track {
+  animation: entrance-controls-fade 300ms ease 1750ms both;
+}
+
+.entrance-skip {
+  animation: entrance-controls-fade 300ms ease 1950ms both;
+}
+
+@keyframes entrance-loading-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.entrance-skip:hover {
+  border-color: #c0aad9;
+  background: #ffffff0d;
+}
+
+@keyframes logo-piece-arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(var(--origin-x), var(--origin-y), 180px) rotateX(var(--tilt)) rotateY(var(--tilt)) rotateZ(var(--spin)) scale(0.7);
+  }
+  12% {
+    opacity: 1;
+  }
+  48% {
+    transform: translate3d(calc(var(--origin-x) * 0.12), calc(var(--origin-y) * -0.04), 65px) rotateX(12deg) rotateY(-12deg) rotateZ(calc(var(--spin) * 0.12)) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+  }
+}
+
+@keyframes logo-settle {
+  0% {
+    transform: rotateY(-10deg) rotateX(5deg) scale(0.96);
+  }
+  65%,
+  100% {
+    transform: rotateY(0) rotateX(0) scale(1);
+  }
+}
+
+@keyframes logo-reveal-page {
+  0%,
+  94% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logo-dock-to-header {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(var(--dock-x, 0px), var(--dock-y, 0px), 0) scale(var(--dock-scale, 0.25));
+  }
+}
+
+@keyframes entrance-backdrop-reveal {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes entrance-controls-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes logo-light-sweep {
+  0% {
+    opacity: 0;
+    clip-path: polygon(-80% 0, -55% 0, -105% 100%, -130% 100%);
+  }
+  20%, 80% { opacity: 0.65; }
+  100% {
+    opacity: 0;
+    clip-path: polygon(200% 0, 225% 0, 175% 100%, 150% 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-entrance,
+  .logo-entrance::before,
+  .entrance-dock,
+  .entrance-mark,
+  .entrance-piece,
+  .entrance-sheen,
+  .entrance-loading-track,
+  .entrance-loading-track > span,
+  .entrance-skip {
+    animation: none;
+  }
+}

@@ -1,0 +1,475 @@
+/* A restrained foundation lets the existing artwork and brand accents lead. */
+#everyone .bs-c68a13f {
+  gap: 18px;
+  align-items: stretch;
+}
+
+#everyone .bs-02e1edb {
+  position: relative;
+  padding: 26px;
+  border: 1px solid #e5e1e9;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 6px 22px #30273804;
+  gap: 12px;
+  transition: border-color 200ms, box-shadow 200ms, transform 200ms;
+}
+
+#everyone .bs-02e1edb:hover {
+  border-color: #bcabc9;
+  box-shadow: 0 12px 28px #3027380a;
+  transform: translateY(-3px);
+}
+
+#everyone .bs-e273cbe {
+  color: #353040;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#everyone .bs-7f6905e {
+  color: #666373;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+  #everyone .bs-c68a13f {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  #everyone .bs-02e1edb {
+    padding: 22px;
+    gap: 8px;
+  }
+}
+
+main section.bs-5755df1:not(#top) {
+  padding: 12px 32px 42px;
+  color: #302b3a;
+  background: transparent;
+}
+
+main section.bs-5755df1:not(#top)::before {
+  display: none;
+}
+
+main section.bs-5755df1:not(#top) > .bs-2bfbc72 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 40px 14px;
+  gap: 22px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+main section.bs-5755df1:not(#top) .bs-2ba8453 {
+  max-width: 920px;
+  margin: 0;
+  color: #302b3a;
+  font-size: clamp(42px, 5.4vw, 78px);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+}
+
+main section.bs-5755df1:not(#top) h2 .bs-62bede0 {
+  margin-top: 9px;
+  color: #875ba7;
+}
+
+main section.bs-5755df1:not(#top) .bs-6c845f1 > .wp-block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+main section.bs-5755df1:not(#top) .bs-fb84486 > .wp-block-button__link {
+  min-height: 54px;
+  padding: 0 24px;
+  border: 1px solid #b19ac7;
+  border-radius: 12px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #9474b3, #775595);
+  font-size: 14px;
+}
+
+main section.bs-5755df1:not(#top) .bs-9813cbb > .wp-block-button__link {
+  min-height: 54px;
+  padding: 0 24px;
+  border: 1px solid #c9b9d6;
+  border-radius: 12px;
+  color: #704b91;
+  background: transparent;
+  font-size: 14px;
+}
+
+main section.bs-5755df1:not(#top) .wp-block-button__link:hover {
+  border-color: #dbc5ef;
+  filter: brightness(1.1);
+}
+
+@media (max-width: 600px) {
+  main section.bs-5755df1:not(#top) {
+    padding: 8px 20px 32px;
+  }
+  main section.bs-5755df1:not(#top) > .bs-2bfbc72 {
+    padding: 20px 4px 10px;
+    border-radius: 0;
+  }
+  main section.bs-5755df1:not(#top) .bs-6c845f1 {
+    width: 100%;
+  }
+  main section.bs-5755df1:not(#top) .bs-6c845f1 > .wp-block-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  main section.bs-5755df1:not(#top) .wp-block-button__link {
+    width: 100%;
+  }
+}
+
+#owners .bs-7646952 > .wp-block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+#owners .bs-80cde14 > .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 22px;
+  border: 1px solid #bba6cd;
+  border-radius: 13px;
+  color: #704b91;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 180ms, background 180ms, border-color 180ms, transform 180ms;
+}
+
+#owners .bs-80cde14 > .wp-block-button__link:hover {
+  border-color: #7951a2;
+  color: #ffffff;
+  background: #7951a2;
+  transform: translateY(-2px);
+}
+
+#owners .bs-80cde14 > .wp-block-button__link:focus-visible {
+  outline: 3px solid #a58abd;
+  outline-offset: 4px;
+}
+
+#top .bs-c99a3ff > .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 20px;
+  border: 1px solid #bda5d56b;
+  border-radius: 13px;
+  color: #ecdff7;
+  background: #a47bbd14;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 180ms, border-color 180ms, transform 180ms;
+}
+
+#top .bs-c99a3ff > .wp-block-button__link::before {
+  display: none;
+  content: none;
+}
+
+#top .bs-c99a3ff > .wp-block-button__link:hover {
+  border-color: #c5a5e5;
+  background: #9d6fc03b;
+  transform: translateY(-2px);
+}
+
+#top .bs-c99a3ff > .wp-block-button__link:focus-visible {
+  outline: 3px solid #c5a5e5;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  #top .bs-c99a3ff > .wp-block-button__link {
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+}
+
+#payouts .bs-c99a3ff > .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 22px;
+  border: 1px solid #bba6cd;
+  border-radius: 12px;
+  color: #704b91;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 180ms, background 180ms, border-color 180ms, transform 180ms;
+}
+
+#payouts .bs-c99a3ff > .wp-block-button__link::before {
+  display: none;
+  content: none;
+}
+
+#payouts .bs-c99a3ff > .wp-block-button__link:hover {
+  border-color: #7951a2;
+  color: #ffffff;
+  background: #7951a2;
+  transform: translateY(-2px);
+}
+
+#payouts .bs-c99a3ff > .wp-block-button__link:focus-visible {
+  outline: 3px solid #a58abd;
+  outline-offset: 4px;
+}
+
+#owners .bs-7d127ca {
+  gap: 18px;
+  align-items: stretch;
+}
+
+#owners .bs-7d127ca > div {
+  padding: 24px;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  #owners .bs-7d127ca {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  #owners .bs-7d127ca > div {
+    padding: 22px;
+  }
+}
+
+.bs-c9db056.progress-animate > div {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.bs-c9db056.progress-animate.is-filled > .bs-e849f45 {
+  transform: scaleX(1);
+  transition: transform 1050ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.bs-c9db056.progress-animate.is-filled > .bs-8f6dbc5 {
+  transform: scaleX(1);
+  transition: transform 450ms ease-out 1050ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-c9db056.progress-animate > div {
+    transform: none;
+    transition: none;
+  }
+}
+
+:root {
+  --surface-paper: #faf9f6;
+  --surface-ink: #282833;
+  --brand-action: #7951a2;
+}
+
+.site-header,
+footer,
+main section.bs-5755df1 {
+  background: #252631f7;
+}
+
+.hero-composition {
+  background:
+    radial-gradient(ellipse at 83% 5%, #9264b32e, transparent 60%),
+    radial-gradient(ellipse at 100% 70%, #41978724, transparent 65%),
+    radial-gradient(ellipse at 62% 115%, #c5a14d18, transparent 58%),
+    radial-gradient(ellipse at 110% 110%, #c9734b14, transparent 55%),
+    linear-gradient(120deg, #242936, #302d3c);
+}
+
+main section:is(#everyone, #portfolio, #owners, #about) {
+  background: #ffffff;
+}
+
+main section:is(#platform, #payouts, #invest) {
+  background: var(--surface-paper);
+}
+
+#platform .bs-68ba019 > .bs-d6ddee3,
+#platform .bs-68ba019 > .bs-f908efc {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #e7e4df, 0 10px 30px #28283304;
+}
+
+#platform .bs-68ba019 > .bs-18f2a80 {
+  background: linear-gradient(145deg, #f4f0f8, #ebe5f2);
+  box-shadow: inset 0 0 0 1px #d9cde6, 0 10px 30px #28283304;
+}
+
+#platform .bs-18f2a80 .bs-53ae860 {
+  color: #302a3c;
+}
+
+#platform .bs-18f2a80 .bs-1f70e34 {
+  color: #5c5668;
+}
+
+#platform .bs-18f2a80 .bs-98047a8 {
+  color: #775890;
+  border-color: #d3c4e1;
+  background: #ffffff80;
+}
+
+#platform .bs-18f2a80 .bs-b554dad {
+  border-color: #d3c4e1;
+  background: #ffffff88;
+}
+
+#platform .bs-68ba019 > div::before {
+  opacity: 0.4;
+}
+
+#portfolio .bs-2723de9 {
+  border-color: #474550;
+  background: linear-gradient(145deg, #35333e, #272731);
+}
+
+#portfolio .bs-8e9a4b1 {
+  border-color: #e0e7e2;
+  background: #f1f5f2;
+}
+
+#portfolio .bs-923ea26 {
+  border-color: #e5e0ea;
+  background: #f3f0f6;
+}
+
+#token > .bs-47788f9 {
+  border-color: #4b4756;
+  background:
+    radial-gradient(ellipse at 100% 0%, #9c7fb21a, transparent 70%),
+    #2a2934;
+}
+
+#token .bs-68f4b5a,
+#token .bs-68f4b5a:first-child,
+#token .bs-b9c7bc8 {
+  border-color: #d9d0e426;
+  background: #ffffff07;
+}
+
+#payouts .bs-f960b5f {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #e8e4df;
+}
+
+#payouts .bs-f960b5f:last-child {
+  background: #ede7f3;
+  box-shadow: none;
+}
+
+#payouts .bs-5049235 {
+  color: #684985;
+}
+
+#payouts .bs-336dca5 {
+  background: #7951a21c;
+}
+
+#payouts .bs-6ace0d0 {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #e8e4df;
+}
+
+#payouts .bs-feea0c1 {
+  color: #654a7f;
+}
+
+#payouts .bs-6ace0d0 .bs-d8efea4,
+#payouts .bs-6ace0d0 .bs-d63cffa {
+  color: #5c6170;
+}
+
+#payouts .bs-6ace0d0 .bs-4908ce3 > p {
+  background: #f1ecf6;
+}
+
+#payouts .bs-25fcb64 {
+  color: #7951a2;
+}
+
+.buy-button,
+#top .bs-fb84486 > .wp-block-button__link,
+.bs-f355157 > .wp-block-button__link,
+.bs-b688d6a > .wp-block-button__link,
+.bs-f8176b1 {
+  border-color: #a58abd;
+  color: #ffffff;
+  background: linear-gradient(135deg, #8b64b0, #715092);
+}
+
+.buy-button:hover,
+.bs-f8176b1:hover {
+  color: #ffffff;
+  background: #7951a2;
+}
+
+#top .bs-9813cbb > .wp-block-button__link {
+  border-color: #d1c5dd4d;
+  color: #f1eaf7;
+  background: #ffffff05;
+}
+
+#about .bs-7aa78ba > .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 44px;
+  margin-top: 9px;
+  padding: 0 22px;
+  border: 1px solid #c8b7d9;
+  border-radius: 10px;
+  color: #684583;
+  background: #eee7f5;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 #ffffffaa;
+  transition: color 180ms, background 180ms, border-color 180ms, transform 180ms;
+}
+
+#about .bs-7aa78ba > .wp-block-button__link:hover {
+  border-color: #7951a2;
+  color: #ffffff;
+  background: #7951a2;
+  transform: translateY(-2px);
+}
+
+#about .bs-7aa78ba > .wp-block-button__link:focus-visible {
+  outline: 3px solid #a58abd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  .primary-navigation {
+    background: #302e3b;
+  }
+}

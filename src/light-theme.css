@@ -1,0 +1,330 @@
+/* Light editorial surfaces, with navy reserved for visual emphasis. */
+:root {
+  background: #ffffff;
+}
+
+.hero-composition {
+  background:
+    radial-gradient(ellipse at 85% 35%, #25467255, transparent 50%),
+    #10294c;
+}
+
+#top {
+  color: #edeff3;
+}
+
+.bs-75c1c05 {
+  color: #edeff3;
+}
+
+.bs-62bede0 {
+  color: #f3dda8;
+}
+
+.bs-96f48cb {
+  color: #c9a55c;
+}
+
+.bs-d994c4d {
+  color: #b7c4d8;
+}
+
+.hero-composition .bs-9813cbb > .wp-block-button__link {
+  border-color: #60738a;
+  color: #edeff3;
+  background: transparent;
+}
+
+.hero-composition .bs-c99a3ff > .wp-block-button__link {
+  color: #c4b5fd;
+}
+
+.hero-composition .bs-c99a3ff > .wp-block-button__link::before {
+  background: #8b5cf6;
+}
+
+.bs-84aa42d {
+  border-color: #aec6e524;
+}
+
+.bs-04ddf33 {
+  border-color: #aec6e524;
+}
+
+.bs-04ddf33 > p:first-child {
+  color: #f3dda8;
+}
+
+.bs-04ddf33:nth-child(2) > p:first-child {
+  color: #e4dafb;
+}
+
+.bs-04ddf33:nth-child(3) > p:first-child {
+  color: #a2dedb;
+}
+
+.bs-d553aff {
+  color: #aabbd1;
+}
+
+.property-artwork {
+  top: 48px;
+  right: max(38px, calc((100vw - 1400px) / 2));
+  width: 42%;
+  height: 620px;
+  border: 1px solid transparent;
+  border-radius: 26px 26px 100px 26px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.property-artwork .chip-gold {
+  right: 4%;
+}
+
+.property-artwork .chip-teal {
+  left: 3%;
+}
+
+.property-artwork .chip-purple {
+  right: 4%;
+}
+
+.property-artwork .artwork-caption {
+  bottom: 30px;
+  left: 18%;
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) {
+  color: #18324f;
+  background: #ffffff;
+  --muted: #59697b;
+  --line: #18375724;
+}
+
+main section:is(#platform, #owners) {
+  background: #f7f6f2;
+}
+
+main section#portfolio {
+  background: #eef2f5;
+}
+
+main section#invest {
+  background: #f1f0f7;
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about) h2 {
+  color: #18324f;
+}
+
+main section:is(#everyone, #platform, #portfolio, #payouts, #owners, #invest, #about)
+  :is(.bs-bafd7f0, .bs-d6c3309, .bs-c57a826, .bs-703b01b) {
+  color: #947038;
+}
+
+main section:is(#everyone, #payouts, #owners)
+  :is(.bs-ac6d016, .bs-3706a00, .bs-df14b22) {
+  color: #947038;
+}
+
+#everyone .bs-67b5f98,
+#owners .bs-67b5f98 {
+  padding: 28px 35px;
+  border: 1px solid #2d4968;
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at top right, #304e7333, transparent 60%),
+    #142e4f;
+}
+
+.bs-e273cbe {
+  color: #213d5d;
+}
+
+.bs-7f6905e {
+  color: #59697b;
+}
+
+.bs-02e1edb {
+  border-color: #b38d4a;
+}
+
+.bs-02e1edb:nth-child(2) {
+  border-color: #9478b5;
+}
+
+.bs-02e1edb:nth-child(3) {
+  border-color: #398e87;
+}
+
+#platform .bs-53ae860 {
+  color: #18324f;
+}
+
+#platform .bs-98047a8 {
+  color: #6a7787;
+}
+
+#platform .bs-b554dad {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 13px;
+  background: #18324f;
+}
+
+#platform .bs-68ba019 > div {
+  border-top-color: #18375735;
+}
+
+#portfolio .bs-f29dbe2 {
+  color: #edeff3;
+  --muted: #b7c4d8;
+  --line: #aec6e524;
+}
+
+#portfolio .bs-2723de9 {
+  background:
+    radial-gradient(ellipse at 80% 10%, #c9a55c24, transparent 70%),
+    #18314e;
+}
+
+#portfolio .bs-f29dbe2 > div {
+  box-shadow: 0 10px 30px #18324f0d;
+}
+
+#token {
+  background: #10294c;
+}
+
+#token > div {
+  border-bottom: 0;
+}
+
+#payouts .bs-c108906 {
+  color: #805f2d;
+  border-color: #b2935c77;
+  background: #f1e8d5;
+}
+
+#payouts .bs-aa3cc46 {
+  color: #7f6336;
+}
+
+#payouts .bs-5049235 {
+  color: #745795;
+}
+
+#payouts .bs-336dca5 {
+  background: #18324f;
+}
+
+#payouts .bs-f083a20 {
+  color: #805f2d;
+}
+
+#payouts .bs-feea0c1 {
+  color: #745795;
+}
+
+#payouts .bs-804b615 {
+  color: #947038;
+}
+
+#payouts .bs-25fcb64 {
+  color: #745795;
+}
+
+#payouts .bs-c99a3ff > .wp-block-button__link {
+  color: #745795;
+}
+
+#owners :is(.bs-c60ec07, .bs-d91348a, .bs-2483574, .bs-c004fcd) {
+  color: #203b5b;
+}
+
+#owners .bs-80cde14 > .wp-block-button__link {
+  color: #267b75;
+}
+
+#invest .bs-7fea2bb {
+  border-color: #18375724;
+}
+
+#invest .bs-c44f61b {
+  color: #233e5d;
+}
+
+#invest .bs-552a558 {
+  color: #edeff3;
+  background: linear-gradient(145deg, #203f65, #142e4f);
+}
+
+#invest .bs-552a558 .bs-2d35d39 {
+  color: #bdcadc;
+}
+
+#about .bs-158f96e {
+  color: #866a39;
+}
+
+#about .bs-7aa78ba > .wp-block-button__link {
+  color: #805f2d;
+}
+
+#about .bs-9813cbb > .wp-block-button__link {
+  border-color: #18375744;
+  color: #203b5b;
+}
+
+@media (max-width: 1439px) {
+  .property-artwork {
+    right: 32px;
+    height: 570px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .property-artwork {
+    top: 70px;
+    right: 25px;
+    width: 42%;
+    height: 505px;
+  }
+}
+
+@media (max-width: 800px) {
+  .property-artwork {
+    top: auto;
+    right: 50%;
+    bottom: 205px;
+    width: calc(100% - 56px);
+    height: 480px;
+    border-radius: 20px 20px 65px 20px;
+  }
+  #everyone .bs-67b5f98,
+  #owners .bs-67b5f98 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-artwork {
+    bottom: 275px;
+    width: calc(100% - 44px);
+    height: 370px;
+  }
+  .property-artwork .artwork-caption {
+    bottom: 9px;
+    left: 12%;
+    padding: 9px 10px;
+    font-size: 9px;
+  }
+  #everyone .bs-67b5f98,
+  #owners .bs-67b5f98 {
+    padding: 15px;
+    border-radius: 14px;
+  }
+}

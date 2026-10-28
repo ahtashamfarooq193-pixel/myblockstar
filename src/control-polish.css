@@ -1,0 +1,198 @@
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid #a8c6ea38;
+  border-radius: 11px;
+  color: #e3eaf2;
+  background: #ffffff06;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 200ms, border-color 200ms, box-shadow 200ms;
+}
+
+.language-button:hover,
+.language-button[aria-expanded="true"] {
+  border-color: #bba16a99;
+  background: #ffffff0c;
+}
+
+.language-button:focus-visible {
+  outline: none;
+  border-color: #9bd7ce;
+  box-shadow: 0 0 0 3px #9bd7ce26;
+}
+
+.language-caret {
+  width: 6px;
+  height: 6px;
+  margin: -3px 2px 0 5px;
+  border-right: 1px solid #b9c7d8;
+  border-bottom: 1px solid #b9c7d8;
+  transform: rotate(45deg);
+  transition: transform 180ms;
+}
+
+.language-button[aria-expanded="true"] .language-caret {
+  margin-top: 3px;
+  transform: rotate(225deg);
+}
+
+.language-list {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  z-index: 110;
+  width: 188px;
+  max-height: min(430px, calc(100dvh - 120px));
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid #dadfe6;
+  border-radius: 14px;
+  background: #fffefc;
+  box-shadow: 0 16px 45px #071b3530, 0 3px 9px #071b3510;
+  scrollbar-width: thin;
+  scrollbar-color: #c7cfd7 transparent;
+  animation: language-open 160ms ease both;
+}
+
+.language-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 37px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  color: #40536a;
+  background: transparent;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 160ms, background 160ms;
+}
+
+.language-row:hover,
+.language-row:focus-visible {
+  outline: none;
+  color: #18334e;
+  background: #f0f3f6;
+}
+
+.language-row[aria-checked="true"] {
+  color: #715927;
+  background: #f4eddd;
+  font-weight: 700;
+}
+
+.selected-language-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b28e47;
+}
+
+@keyframes language-open {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* A thin travelling highlight stays within the button border. */
+@property --electric-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.buy-button,
+.bs-fb84486 > .wp-block-button__link,
+.bs-f355157 > .wp-block-button__link,
+.bs-b688d6a > .wp-block-button__link,
+.bs-9813cbb > .wp-block-button__link,
+.bs-f8176b1 {
+  position: relative;
+  isolation: isolate;
+}
+
+.buy-button::before,
+.bs-fb84486 > .wp-block-button__link::before,
+.bs-f355157 > .wp-block-button__link::before,
+.bs-b688d6a > .wp-block-button__link::before,
+.bs-9813cbb > .wp-block-button__link::before,
+.bs-f8176b1::before {
+  position: absolute;
+  inset: -1px;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--electric-angle),
+    transparent 0deg 240deg,
+    #b48a3644 265deg,
+    #f7e6b4 293deg,
+    #ffffff 307deg,
+    #84dacf 319deg,
+    transparent 340deg 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  content: '';
+  pointer-events: none;
+  animation: electric-border 5s linear infinite;
+}
+
+.bs-9813cbb > .wp-block-button__link::before {
+  animation-delay: -2.5s;
+}
+
+@keyframes electric-border {
+  to {
+    --electric-angle: 360deg;
+  }
+}
+
+@media (max-width: 600px) {
+  .language-list {
+    position: fixed;
+    top: 86px;
+    right: 20px;
+    width: 188px;
+  }
+  .language-button {
+    min-height: 44px;
+    padding: 0 9px;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .language-button .language-globe {
+    display: none;
+  }
+  .language-caret {
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  .language-button {
+    padding: 0 7px;
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buy-button::before,
+  .wp-block-button__link::before,
+  .bs-f8176b1::before {
+    animation: none;
+  }
+}

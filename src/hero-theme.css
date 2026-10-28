@@ -1,0 +1,124 @@
+.hero-composition {
+  background:
+    linear-gradient(90deg, #14273ee8 0%, #14273e99 36%, #14273e00 72%),
+    radial-gradient(ellipse at 77% 8%, #8753ae80 0%, transparent 66%),
+    radial-gradient(ellipse at 100% 58%, #238d8773 0%, transparent 65%),
+    radial-gradient(ellipse at 83% 116%, #c7a34c55 0%, transparent 58%),
+    radial-gradient(ellipse at 107% 108%, #cb704b55 0%, transparent 56%),
+    linear-gradient(145deg, #14273e, #302940 58%, #263c43);
+}
+
+#top,
+#top .bs-75c1c05,
+#top .hero-title-line {
+  color: #f3eff8;
+}
+
+#top h1 .bs-62bede0 {
+  color: #9ee3d7;
+}
+
+#top .bs-96f48cb {
+  color: #d8c39a;
+}
+
+#top .bs-621ac33 {
+  background: #d8c39a;
+}
+
+#top .bs-d994c4d {
+  color: #d0c7da;
+}
+
+#top .bs-fb84486 > .wp-block-button__link {
+  border-color: #b49bde;
+  color: #ffffff;
+  background: linear-gradient(130deg, #9365c3, #704b9f);
+  box-shadow: 0 6px 18px #100c1c1a;
+}
+
+#top .bs-9813cbb > .wp-block-button__link {
+  border-color: #7dd3c688;
+  color: #c9f4ec;
+  background: linear-gradient(130deg, #245652, #203d48);
+}
+
+#top .bs-c99a3ff > .wp-block-button__link {
+  color: #d7b9ed;
+}
+
+#top .bs-c99a3ff > .wp-block-button__link::before {
+  background: #bd8edc;
+}
+
+#top .bs-04ddf33 > p:first-child {
+  color: #eddbb3;
+}
+
+#top .bs-04ddf33:nth-child(2) > p:first-child {
+  color: #d9b9ee;
+}
+
+#top .bs-04ddf33:nth-child(3) > p:first-child {
+  color: #9ee3d7;
+}
+
+#top .bs-d553aff {
+  color: #cfc3d9;
+}
+
+.hero-composition .orbit {
+  border-color: #c7b2dc26;
+}
+
+.hero-composition .orbit-three {
+  border-color: #c7b2dc1c;
+}
+
+.hero-composition .scroll-cue {
+  color: #d8c39a;
+}
+
+.hero-composition .scroll-cue span {
+  background: #d8c39a66;
+}
+
+.property-artwork .asset-chip {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  line-height: 1;
+  border-radius: 9px;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 #ffffff0a, 0 8px 25px #100b2026;
+}
+
+.property-artwork .chip-gold {
+  background: linear-gradient(125deg, #4e4050, #302d49);
+  border-color: #d6b97866;
+  color: #f1d8a1;
+}
+
+.property-artwork .chip-teal {
+  background: linear-gradient(125deg, #123c3f, #182d40);
+  border-color: #91dfcf99;
+  color: #e3fff8;
+  font-size: 13px;
+}
+
+.property-artwork .chip-purple {
+  background: linear-gradient(125deg, #51406b, #332d4e);
+  border-color: #bda0e066;
+  color: #dfc9f7;
+}
+
+.property-artwork .asset-chip::before {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
